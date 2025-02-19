@@ -1,0 +1,113 @@
+body{
+    background-color: cornsilk;
+}
+#bar{
+    background-color: cadetblue;
+    text-align: center;
+    color: beige;
+    padding: 5px;
+    margin: 2%;
+    width: 96%;
+    font-family: 'Times New Roman';
+    clear:both;
+}
+#main-nav{
+    background-color: aquamarine;
+    text-align: center;
+    
+}
+
+/*To remove the bullet points on the navigation elements and line them up horizontally */
+#main-nav ul li{
+    /* this removes the bullet points and vertical aspect */
+    list-style-type: none;
+    display: inline-block;
+    position:relative;
+    padding:10px;
+
+}
+
+/* pseudo classes like hover elements are seperate */
+
+#main-nav li:hover {
+    background-color: darkgrey;
+}
+
+/* any unordered list within another unordered list
+within main nav...hides the elements */
+
+#main-nav ul ul{
+    display:none;
+    position: absolute;
+    
+}
+
+/* Whenever there is a hover on the main-nav with an unordered list
+then there should be a display block */
+
+#main-nav li:hover ul{
+    display: block;
+    position: absolute;
+    background-color: aliceblue;
+    float: left;
+    padding:0%
+
+}
+
+/* The box containing both the contact and the text area  */
+.main-container{
+    border: 2px solid rgb(249, 231, 231);
+    height:100%;
+
+    
+}
+
+
+/* The box holding the information other than the contact form and its parameters */
+.content-area{
+    width: 70%;
+    float:left;
+    margin: 0;
+
+}
+
+/* content area, since it is a class, we use a . */
+.content-box{
+    background-color: rgb(255, 255, 255);
+    color: rgb(3, 2, 0);
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 15px;
+    margin: 5px;
+}
+
+/* sidebar */
+#contact{
+    text-align: center;
+    background-color: blueviolet;
+    float: right;
+    color: antiquewhite;
+    width: 25%;
+    margin-right: 10px;
+    padding: 2px;
+    border: 2px solid black;
+}
+
+#contact:hover{
+    background-color: coral;
+}
+
+/* Name box focus/un-focus */
+#name{
+    width:5%;
+    padding:3px;
+    transition: width 0.3s;
+}
+
+#name:focus{
+    width:70%;
+}
+
+body {
+    font-family: 'Roboto';  
+}
