@@ -1,0 +1,83 @@
+<html>
+    <head>
+        <title>Professional Portfolio</title>
+        <link rel="stylesheet" href="Lab3-html layout (css external file).css">
+    </head>
+    <body>
+        <!-- Header Section -->
+
+        <header id="bar">
+            <h1>Megane C. Mbapte Tchinda Portfolio</h1>
+        </header>
+
+        <!-- Navigation Section -->
+
+        <nav id="main-nav">
+            <ul>
+                <li><a href="https://www.linkedin.com/in/megane-mbapte/" target="_blank">Mission</a></li>
+                <li><a href="https://www.linkedin.com/in/megane-mbapte/" target="_blank">Experience</a>
+                    <!--This houses the content within the Experiences link  -->
+                   <ul>
+                      <li>Experience 1</li>
+                      <li>Experience 2</li>
+                      <li>Experience 3</li>
+                   </ul>  
+                </li>
+                <li><a href="https://www.linkedin.com/in/megane-mbapte/" target="_blank">Projects</a></li>
+            </ul>
+
+        </nav>
+
+        <!-- Main text/body area, this will hold all of the other text,
+          elements and their styles, this will hold two sections, a side bar and text boxes-->
+         <div class="main-container">
+            <h1>About Me</h1>
+
+
+         <!-- Content -->
+          <div class="content-area">
+            <div class="content-box">
+                <h1>But first, Let's learn about you</h1>
+                <form>
+                    <label for="name">Name:</label> 
+                    <input type="text" id="name" placeholder="Type here" required><br>
+                    <label for="identity">Identity:</label>
+                    <select id="identity" name="identity">
+                      <option hidden disabled selected ---Select Option---></option>
+                      <option value="Employer">Employer</option>
+                      <option value="Student">Student</option>
+                      <option value="Collaborator">Collaborator</option>
+                    </select>
+
+                    <br>
+                    <input type="submit" >
+       
+                </form>
+
+            </div>
+               
+
+          </div>
+
+
+          <!-- sidebar -->
+           <aside id="Contact">
+            <h1>Contact Information</h1>
+            <hr>
+            <h2>Name: Megane Clara Mbapte Tchinda</h2>
+            <h3>Email: meganecm9@hotmail.com</h3>
+            <h4>Linkedin</h4>
+
+           </aside>
+         </div>
+
+         <!-- Footer -->
+
+         <footer id="bar"> 
+            <p>Made by Megane Mbapte Tchinda</p>
+         </footer>
+
+    </body>
+
+
+</html>
